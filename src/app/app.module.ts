@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MastheadComponent } from './components/masthead/masthead.component';
 import { DumbCounterComponent } from './components/dumb-counter/dumb-counter.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { NavigationComponent } from './components/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +14,8 @@ import { DumbCounterComponent } from './components/dumb-counter/dumb-counter.com
     AppComponent,
     MastheadComponent,
     DumbCounterComponent,
+    DashboardComponent,
+    NavigationComponent,
   ],
   imports: [
     // use these other modules

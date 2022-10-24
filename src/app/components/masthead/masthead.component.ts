@@ -1,15 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-masthead',
   templateUrl: './masthead.component.html',
-  styleUrls: ['./masthead.component.css']
+  styleUrls: ['./masthead.component.css'],
 })
-export class MastheadComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class MastheadComponent {
+  constructor() {}
 }

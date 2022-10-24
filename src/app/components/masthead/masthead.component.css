@@ -1,0 +1,15 @@
+header > h1 {
+    font-size: 3rem;
+    color: red;
+}
+
+header > p {
+    font-size: 2rem;
+}
+
+header {
+    background-color: rgb(230, 210, 210);
+    padding: 4rem;
+    border-bottom: 2px solid black;
+    margin-bottom: 2rem;
+}
