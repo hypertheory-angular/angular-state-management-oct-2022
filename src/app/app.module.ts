@@ -8,6 +8,7 @@ import { DumbCounterComponent } from './components/dumb-counter/dumb-counter.com
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { UiModule } from './features/ui/ui.module';
+import { AuthModule } from './features/auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { UiModule } from './features/ui/ui.module';
     BrowserModule,
     AppRoutingModule,
     UiModule,
+    AuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent], // root level module has this.
