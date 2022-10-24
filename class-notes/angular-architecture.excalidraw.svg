@@ -1,0 +1,16 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 415 465" width="415" height="465">
+  <!-- svg-source:excalidraw -->
+  <!-- payload-type:application/vnd.excalidraw+json --><!-- payload-version:2 --><!-- payload-start -->eyJ2ZXJzaW9uIjoiMSIsImVuY29kaW5nIjoiYnN0cmluZyIsImNvbXByZXNzZWQiOnRydWUsImVuY29kZWQiOiJ4nM1Ty27bMFx1MDAxMLznK1x1MDAwNOWah96PXHUwMDAwReGkSVx1MDAxMLRxXHUwMDBlLpCiRVx1MDAwZqxES4QpkSApO47hf++SNkRZdYv20KI8XHUwMDEw4Cx3dzg73Jw4jqvWXHUwMDFju1eOi19cbkRJKdDKPdP4XHUwMDEyXHUwMDBiSVhcdTAwMGKhwJwl60RhbtZKcXl1edkgscCKU1TgiyWRXHUwMDFkolJ1JWFcdTAwMTdcdTAwMDVrLonCjXyr9ylq8Fx1MDAxYs6aUolcdTAwMGLb5Fx1MDAxY5dEMbHrhSlucKskVP9cdTAwMDJnx9mYfcBO4EKhtqLYJJjQgGAyXHUwMDA2p6w1XFz9OI/yIFx1MDAwZeK8v0HkO2incFx04TlQxjaiIfd6kZ3ffbiZ3b/mUVx1MDAxNNdP/vVkPbVd54TSmVrTnVx1MDAxMqioOzHgJJVgXHUwMDBi/ExKVevuI7zPk1xmRLBZgnVV3WIpXHUwMDBmclx1MDAxOEdcdTAwMDVRa415Xo/uRLhyLPJcdTAwMDKnMMv6s8lI01HvXHUwMDFiRkFt6H3qmWW7f0PFolx1MDAwMlxubdnfUVx1MDAwMrWSI1x1MDAwMTOx91b7V4V53GM1JlWtXHUwMDAwjLzBY7FcdTAwMTE3jdLAXHUwMDBi8zTsXHUwMDAzulx1MDAwYn8ozZi/jrWpkeB7XHJcXKlcdTAwMGZcdTAwMDOGmtztwCM2ueMl2s3ST2BcdTAwMDVJlIWJb1tS0i4g2HaUWoxcdTAwMTVcdTAwMGI7foNuz47bTuFcdTAwMTd11HH+T1x1MDAxZJd7flx1MDAwMrbzft9xj5Ffvr9/vp095aub2yf0OVvxT/+746IwPXRcXFx1MDAxOP41x/nZXHUwMDExx1x1MDAwNfHYcH5cYsPPkzDL/7HjsjhP/8BxdrKsVTPyqsVccrxcdTAwMDP0XHUwMDBlNYSuXHUwMDBmhmOsXGJMJ23VUSScXHTnlFx1MDAxNEhpQ1x1MDAwZZSVXHUwMDE4XGJcdTAwMTgjZlx1MDAwN6lcdTAwMTNKKu1cXJfi+aGlXHUwMDE1VKF9WLGBXGZcdTAwMDVQQVBOPJTjJzFBKtJcIvrxXHUwMDE3tHZfXHUwMDBidqOeizifKdBcdTAwMGWu7z5cdTAwMWGMh5R7XHUwMDAxbHF3SfDq+keLnM7N0lXNd9VcdTAwMWZcdTAwMDPr4Wy2J9vvd3fLXHUwMDFhIn0=<!-- payload-end -->
+  <defs>
+    <style>
+      @font-face {
+        font-family: "Virgil";
+        src: url("https://unpkg.com/@excalidraw/excalidraw@0.12.0-e9067de/dist/excalidraw-assets/Virgil.woff2");
+      }
+      @font-face {
+        font-family: "Cascadia";
+        src: url("https://unpkg.com/@excalidraw/excalidraw@0.12.0-e9067de/dist/excalidraw-assets/Cascadia.woff2");
+      }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="415" height="465" fill="#ffffff"></rect><g stroke-linecap="round" transform="translate(10 54) rotate(0 197.5 200.5)"><path d="M-1.13 -0.78 C126.92 1, 253.75 1.5, 394.83 -1.05 M0.02 -0.08 C87.22 1.42, 174.49 2.14, 394.59 -0.28 M395.29 -0.75 C395.02 83.47, 395.33 169.77, 394.22 400.07 M394.65 -0.18 C396.32 126.25, 396.56 252.29, 395.01 401.48 M394.11 400.15 C273.61 399.7, 155.05 400.73, -0.69 400.39 M395.11 401.46 C278.54 399.52, 163.28 399.8, -0.09 401.25 M-0.73 401.17 C2.64 297.92, 0.65 193.73, 0.42 -0.23 M0.29 400.73 C-0.08 286.32, -0.33 172.84, 0.33 0.53" stroke="#000000" stroke-width="1" fill="none"></path></g><g transform="translate(59 10) rotate(0 92.5 12.5)"><text x="0" y="18" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000" text-anchor="start" style="white-space: pre;" direction="ltr">Angular Application</text></g></svg>
