@@ -6,18 +6,19 @@ import { AppComponent } from './app.component';
 import { MastheadComponent } from './components/masthead/masthead.component';
 import { DumbCounterComponent } from './components/dumb-counter/dumb-counter.component';
 
-
-
-
 @NgModule({
-  declarations: [ // components 
-    AppComponent, MastheadComponent, DumbCounterComponent
+  declarations: [
+    // components
+    AppComponent,
+    MastheadComponent,
+    DumbCounterComponent,
   ],
-  imports: [ // use these other modules
+  imports: [
+    // use these other modules
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
-  bootstrap: [AppComponent] // root level module has this.
+  bootstrap: [AppComponent], // root level module has this.
 })
-export class AppModule { }
+export class AppModule {}
