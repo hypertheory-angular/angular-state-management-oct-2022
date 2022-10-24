@@ -7,6 +7,7 @@ import { MastheadComponent } from './components/masthead/masthead.component';
 import { DumbCounterComponent } from './components/dumb-counter/dumb-counter.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
+import { UiModule } from './features/ui/ui.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { NavigationComponent } from './components/navigation/navigation.componen
     // use these other modules
     BrowserModule,
     AppRoutingModule,
+    UiModule,
   ],
   providers: [],
   bootstrap: [AppComponent], // root level module has this.

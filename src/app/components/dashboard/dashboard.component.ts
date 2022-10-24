@@ -1,15 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { AlertTypes } from 'src/app/features/ui/components/alert/alert.component';
 
 @Component({
   selector: 'app-dashboard',
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  styleUrls: ['./dashboard.component.css'],
 })
-export class DashboardComponent implements OnInit {
+export class DashboardComponent {
+  constructor() {}
 
-  constructor() { }
+  thing = 'Go On Break!';
+  alertsToShow: {
+    message: string;
+    alert: AlertTypes;
+    dismissable: boolean;
+  }[] = [
+    {
+      message: 'Is it break time yet?',
+      alert: 'info',
+      dismissable: true,
+    },
+    {
+      message: 'Getting Close',
+      alert: 'danger',
+      dismissable: false,
+    },
+  ];
 
-  ngOnInit(): void {
+  theyDismissed(message: string) {
+    console.log(message);
   }
-
 }

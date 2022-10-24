@@ -1,0 +1,22 @@
+<div
+  class="alert"
+  [ngClass]="{
+    'alert-primary': alert === 'primary',
+    'alert-secondary': alert === 'secondary',
+    'alert-success': alert === 'success',
+    'alert-warning': alert === 'warning',
+    'alert-info': alert === 'info',
+    'alert-danger': alert === 'danger'
+  }"
+  role="alert"
+>
+  <span class="alert-message">{{ message }}</span>
+  <div><ng-content></ng-content></div>
+  <button
+    (click)="onDismiss()"
+    *ngIf="dismissable"
+    class="btn btn-sm"
+  >
+    X
+  </button>
+</div>
