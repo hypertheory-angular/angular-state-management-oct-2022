@@ -3,16 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MastheadComponent } from './components/masthead/masthead.component';
+
+
+
 
 @NgModule({
-  declarations: [
-    AppComponent
+  declarations: [ // components 
+    AppComponent, MastheadComponent
   ],
-  imports: [
+  imports: [ // use these other modules
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] // root level module has this.
 })
 export class AppModule { }
