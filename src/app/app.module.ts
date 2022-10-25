@@ -9,6 +9,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { UiModule } from './features/ui/ui.module';
 import { AuthModule } from './features/auth/auth.module';
+import { StoreModule } from '@ngrx/store';
+import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { AuthModule } from './features/auth/auth.module';
     AppRoutingModule,
     UiModule,
     AuthModule,
+    StoreModule.forRoot({}),
+    StoreDevtoolsModule.instrument(),
   ],
   providers: [],
   bootstrap: [AppComponent], // root level module has this.

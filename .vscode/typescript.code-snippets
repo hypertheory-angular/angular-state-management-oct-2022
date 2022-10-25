@@ -1,0 +1,134 @@
+{
+  "NGRX Root Reducer": {
+    "scope": "typescript",
+    "prefix": "ngrx-root-reducer",
+    "body": [
+      "import { ActionReducerMap } from '@ngrx/store';",
+      "",
+      "export interface $1 {",
+      "",
+      "}",
+      "",
+      "export const reducers: ActionReducerMap<$1> = {",
+      "",
+      "};",
+      "$0"
+    ],
+    "description": "Root Reducer for NGRX Store"
+  },
+  "NGRX Entity Reducer": {
+    "scope": "typescript",
+    "prefix": "ngrx-entity-reducer",
+    "body": [
+      "import { EntityState, createEntityAdapter } from '@ngrx/entity';",
+      "import { createReducer, Action, on } from '@ngrx/store';",
+      "",
+      "export interface ${1:EntityInterface} {",
+      "$0",
+      "}",
+      "",
+      "export interface ${2:State} extends EntityState<$1> {",
+      "",
+      "}",
+      "",
+      "export const adapter = createEntityAdapter<$1>();",
+      "",
+      "const initialState = adapter.getInitialState();",
+      "",
+      "export const reducer = createReducer(",
+      "  initialState",
+      ");",
+      "",
+      ""
+    ],
+    "description": "Create a reducer for NGRX Entity State"
+  },
+
+  "NGRX Feature Reducer": {
+    "scope": "typescript",
+    "prefix": "ngrx-feature-reducer",
+    "description": "Create a Feature Reducer",
+    "body": [
+      "import { ActionReducerMap, createFeatureSelector } from \"@ngrx/store\";",
+      "$0",
+      "export const FEATURE_NAME = \"${1:featureName}\";",
+      "",
+      "export interface ${2:FeatureInterface} {}",
+      "",
+      "export const reducers: ActionReducerMap<${2}> = {};",
+      "",
+      "const selectFeature = createFeatureSelector<${2}>(FEATURE_NAME);",
+      ""
+    ]
+  },
+  "NGRX Action File": {
+    "prefix": "ngrx-action-file",
+    "description": "A Set of Action Groups",
+    "body": [
+      "import { createActionGroup, props, emptyProps } from \"@ngrx/store\";\r",
+      "\r",
+      "export const ${2:Reducer}Events = createActionGroup({\r",
+      "  source: \"${1:Feature} ${2:Reducer} Events\",\r",
+      "  events: {},\r",
+      "});\r",
+      "\r",
+      "export const ${2:Reducer}Commands = createActionGroup({\r",
+      "  source: \"${1:Feature} ${2:Reducer} Commands\",\r",
+      "  events: {},\r",
+      "});\r",
+      "\r",
+      "export const ${2:Reducer}Documents = createActionGroup({\r",
+      "  source: \"${1:Feature} ${2:Reducer} Documents\",\r",
+      "  events: {},\r",
+      "});\r",
+      ""
+    ]
+  },
+  "NGRX Effects Class": {
+    "scope": "typescript",
+    "prefix": "ngrx-effects-class",
+    "description": "Create an Effects Class",
+    "body": [
+      "\r",
+      "import { Injectable } from '@angular/core';\r",
+      "import { Actions, createEffect, ofType } from '@ngrx/effects';\r",
+      "\r",
+      "@Injectable()\r",
+      "export class ${1:Name}Effects {\r",
+      "\t$0",
+      "  constructor(private readonly actions\\$: Actions) {}\r",
+      "}\r",
+      ""
+    ]
+  },
+  "NGRX-Effect": {
+    "scope": "typescript",
+    "prefix": "ngrx-effect",
+    "description": "Create an Effect inside an Effect Class",
+    "body": [
+      "${1:name}\\$ = createEffect(() => {",
+      "    return this.actions\\$.pipe(ofType($0));",
+      "  });"
+    ]
+  },
+  "jasmine describe": {
+    "scope": "typescript",
+    "prefix": "desc",
+    "body": [
+      "describe('${1:what}', () => {\r",
+      "\r$0",
+      "});"
+    ],
+    "description": "jasmine describe"
+  },
+  "jasmine it": {
+    "scope": "typescript",
+    "prefix": "it",
+    "body": [
+      "    it('${1:what}', () => {\r",
+      "        $0\r",
+      "    });"
+    ],
+    "description": "jasmine it"
+  }
+}
