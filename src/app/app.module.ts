@@ -11,6 +11,7 @@ import { UiModule } from './features/ui/ui.module';
 import { AuthModule } from './features/auth/auth.module';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+import { EffectsModule } from '@ngrx/effects';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
     UiModule,
     AuthModule,
     StoreModule.forRoot({}),
+    EffectsModule.forRoot([]),
     StoreDevtoolsModule.instrument(),
   ],
   providers: [],

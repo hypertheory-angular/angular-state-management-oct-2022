@@ -10,7 +10,9 @@ import { CounterComponentEvents } from './state/actions/counter.actions';
 })
 export class ReduxCounterComponent {
   model$ = this.store.select(selectCounterModel);
-  constructor(private readonly store: Store) {}
+  constructor(private readonly store: Store) {
+    store.dispatch(CounterComponentEvents.entered());
+  }
 
   increment() {
     // an interaction happens, dispatch an action to the store

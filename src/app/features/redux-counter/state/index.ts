@@ -23,7 +23,10 @@ const selectFeature = createFeatureSelector<ReduxCounterState>(FEATURE_NAME);
 
 // 2. Create a selector from the feature selector for each "branch" of the state.
 
-const selectCounterBranch = createSelector(selectFeature, (f) => f.counter);
+export const selectCounterBranch = createSelector(
+  selectFeature,
+  (f) => f.counter,
+);
 
 // 3. Helpers (optional)
 
