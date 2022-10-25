@@ -1,23 +1,25 @@
-<button
-  [disabled]="(atBeginning$ | async) === true"
-  class="btn btn-primary"
-  (click)="decrement()"
->
-  -
-</button>
-<span>{{ current$ | async }}</span>
-<button
-  class="btn btn-primary"
-  (click)="increment()"
->
-  +
-</button>
-<div>
+<div *ngIf="model$ | async as model">
   <button
-    [disabled]="(atBeginning$ | async) === true"
-    (click)="reset()"
-    class="btn btn-danger"
+    [disabled]="model.atBeginning === true"
+    class="btn btn-primary"
+    (click)="decrement()"
   >
-    RESET
+    -
   </button>
+  <span>{{ model.current }}</span>
+  <button
+    class="btn btn-primary"
+    (click)="increment()"
+  >
+    +
+  </button>
+  <div>
+    <button
+      [disabled]="model.atBeginning === true"
+      (click)="reset()"
+      class="btn btn-danger"
+    >
+      RESET
+    </button>
+  </div>
 </div>

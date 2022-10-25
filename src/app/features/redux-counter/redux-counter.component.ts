@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { selectCounterAtInitialState, selectCounterCurrent } from './state';
+import { selectCounterModel } from './state';
 import { CounterComponentEvents } from './state/actions/counter.actions';
 
 @Component({
@@ -9,8 +9,7 @@ import { CounterComponentEvents } from './state/actions/counter.actions';
   styleUrls: ['./redux-counter.component.css'],
 })
 export class ReduxCounterComponent {
-  current$ = this.store.select(selectCounterCurrent);
-  atBeginning$ = this.store.select(selectCounterAtInitialState);
+  model$ = this.store.select(selectCounterModel);
   constructor(private readonly store: Store) {}
 
   increment() {
