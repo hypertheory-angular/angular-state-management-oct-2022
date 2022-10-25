@@ -4,8 +4,9 @@ import { ReduxCounterComponent } from './redux-counter.component';
 import { ReduxCounterRoutingModule } from './redux-counter-routing.module';
 import { StoreModule } from '@ngrx/store';
 import { FEATURE_NAME, reducers } from './state';
+import { CountByComponent } from './components/count-by/count-by.component';
 @NgModule({
-  declarations: [ReduxCounterComponent],
+  declarations: [ReduxCounterComponent, CountByComponent],
   imports: [
     CommonModule,
     ReduxCounterRoutingModule,

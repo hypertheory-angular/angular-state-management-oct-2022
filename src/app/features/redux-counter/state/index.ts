@@ -39,6 +39,11 @@ const selectCounterAtInitialState = createSelector(
 
 // 4. We need a thing for our actual component.
 
+export const selectCountingBy = createSelector(
+  selectCounterBranch,
+  (b) => b.by,
+);
+
 export const selectCounterModel = createSelector(
   selectCounterCurrent,
   selectCounterAtInitialState,

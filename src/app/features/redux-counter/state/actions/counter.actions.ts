@@ -1,4 +1,4 @@
-import { createActionGroup, props, emptyProps } from '@ngrx/store';
+import { createActionGroup, emptyProps, props } from '@ngrx/store';
 
 // these are things the components tell us about.
 // they are things that happened to a particular component.
@@ -9,6 +9,7 @@ export const CounterComponentEvents = createActionGroup({
     incremented: emptyProps(),
     decremented: emptyProps(),
     reset: emptyProps(),
+    by: props<{ by: 1 | 3 | 5 }>(),
   },
 });
 
