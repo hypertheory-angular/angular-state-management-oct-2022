@@ -1,4 +1,5 @@
 <div
+  #alertTemplate
   class="alert"
   [ngClass]="{
     'alert-primary': alert === 'primary',
@@ -13,6 +14,7 @@
   <span class="alert-message">{{ message }}</span>
   <div><ng-content></ng-content></div>
   <button
+    #daButton
     (click)="onDismiss()"
     *ngIf="dismissable"
     class="btn btn-sm"
