@@ -8,6 +8,7 @@ export const CounterComponentEvents = createActionGroup({
   events: {
     incremented: emptyProps(),
     decremented: emptyProps(),
+    reset: emptyProps(),
   },
 });
 

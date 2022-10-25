@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Store } from '@ngrx/store';
-import { selectCounterCurrent } from './state';
+import { selectCounterAtInitialState, selectCounterCurrent } from './state';
 import { CounterComponentEvents } from './state/actions/counter.actions';
 
 @Component({
@@ -10,6 +10,7 @@ import { CounterComponentEvents } from './state/actions/counter.actions';
 })
 export class ReduxCounterComponent {
   current$ = this.store.select(selectCounterCurrent);
+  atBeginning$ = this.store.select(selectCounterAtInitialState);
   constructor(private readonly store: Store) {}
 
   increment() {
@@ -22,5 +23,8 @@ export class ReduxCounterComponent {
   decrement() {
     this.store.dispatch(CounterComponentEvents.decremented());
     // // on the counter, in the the redux counter, the user decremented
+  }
+  reset() {
+    this.store.dispatch(CounterComponentEvents.reset());
   }
 }

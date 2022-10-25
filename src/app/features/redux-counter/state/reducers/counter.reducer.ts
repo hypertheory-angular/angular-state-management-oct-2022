@@ -13,6 +13,7 @@ const initialState: CounterState = {
 
 export const reducer = createReducer(
   initialState,
+  on(CounterComponentEvents.reset, () => initialState),
   on(
     CounterComponentEvents.incremented,
     (currentState: CounterState): CounterState => ({

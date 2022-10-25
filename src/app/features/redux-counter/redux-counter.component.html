@@ -1,4 +1,5 @@
 <button
+  [disabled]="(atBeginning$ | async) === true"
   class="btn btn-primary"
   (click)="decrement()"
 >
@@ -11,3 +12,12 @@
 >
   +
 </button>
+<div>
+  <button
+    [disabled]="(atBeginning$ | async) === true"
+    (click)="reset()"
+    class="btn btn-danger"
+  >
+    RESET
+  </button>
+</div>
