@@ -4,14 +4,14 @@
   <div>
     <button
       (click)="logOut()"
-      *ngIf="(user$ | async) !== null"
+      *ngIf="(isLoggedIn$ | async) === true"
       class="btn btn-primary"
     >
-      {{ (user$ | async)?.name }} (Click to Log Off)
+      {{ 'fix this' }} (Click to Log Off)
     </button>
     <button
       (click)="logIn()"
-      *ngIf="(user$ | async) === null"
+      *ngIf="(isLoggedIn$ | async) === false"
       class="btn btn-primary"
     >
       Log In
