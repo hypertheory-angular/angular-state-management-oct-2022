@@ -25,10 +25,10 @@ const selectUserBranch = createSelector(selectFeature, (f) => f.user);
 
 // What do our components need?
 
-export const selectIsUserLoggedIn = createSelector(
-  selectUserBranch,
-  (user) => !!user.name,
-);
+export const selectIsUserLoggedIn = createSelector(selectUserBranch, (user) => {
+  console.log('In the selectIsUserLoggedIn Selector');
+  return !!user.name;
+});
 
 export const selectLoggedInUserName = createSelector(
   selectUserBranch,

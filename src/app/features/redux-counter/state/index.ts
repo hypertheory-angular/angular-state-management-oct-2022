@@ -3,6 +3,7 @@ import {
   createFeatureSelector,
   createSelector,
 } from '@ngrx/store';
+import { selectIsUserLoggedIn } from '../../auth/state';
 import { CounterModel } from '../models';
 import * as fromCounter from './reducers/counter.reducer';
 export const FEATURE_NAME = 'reduxCounter';
@@ -25,7 +26,11 @@ const selectFeature = createFeatureSelector<ReduxCounterState>(FEATURE_NAME);
 
 export const selectCounterBranch = createSelector(
   selectFeature,
-  (f) => f.counter,
+
+  (f) => {
+    console.log('In the selectCounterBranch selector function');
+    return f.counter;
+  },
 );
 
 // 3. Helpers (optional)
@@ -50,10 +55,13 @@ export const selectCountingBy = createSelector(
 export const selectCounterModel = createSelector(
   selectCounterCurrent,
   selectCounterAtInitialState,
-  (current, atBeginning) => {
+  selectIsUserLoggedIn,
+  (current, atBeginning, isLoggedIn) => {
+    console.log('In the selectCounterModel selector');
     let model: CounterModel = {
       current,
       atBeginning,
+      loggedIn: isLoggedIn,
     };
     return model;
   },
