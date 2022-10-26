@@ -24,6 +24,7 @@
     "@ngrx/store-devtools": "^14.3.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
+    "zod": "^3.19.1",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {

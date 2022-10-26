@@ -20,7 +20,7 @@ const initialState: CounterState = {
 // RULE: "Pure Functions" -> a "map" from the input to the output, and has no side-effects
 export const reducer = createReducer(
   initialState,
-  on(CounterComponentDocuments.state, (_, a) => a.payload), // make the new state what this document has.
+  on(CounterComponentDocuments.state, (_, action) => action.payload), // make the new state what this document has.
   on(CounterComponentEvents.by, (s, a) => ({ ...s, by: a.by })),
   on(CounterComponentEvents.reset, () => initialState),
   on(CounterComponentEvents.incremented, incrementState),

@@ -19,6 +19,7 @@ export class CounterEffects {
         filter((val) => val !== null), // stop here if it isn't in localstorage yet.
         map((savedValue: string | null) => savedValue!), // have to force the compiler to know that this isn't null
         map((v) => JSON.parse(v) as CounterState), // it is saved as CounterState, so I'm making the compiler happy here again
+        filter((cs) => cs.by === 1 || cs.by === 3 || cs.by === 5),
         map((payload) => CounterComponentDocuments.state({ payload })), // dispatch an action
       );
     },
