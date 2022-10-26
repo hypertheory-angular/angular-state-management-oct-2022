@@ -7,7 +7,7 @@
       *ngIf="(isLoggedIn$ | async) === true"
       class="btn btn-primary"
     >
-      {{ 'fix this' }} (Click to Log Off)
+      {{ userName$ | async }} (Click to Log Off)
     </button>
     <button
       (click)="logIn()"

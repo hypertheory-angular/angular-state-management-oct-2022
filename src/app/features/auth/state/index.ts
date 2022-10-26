@@ -29,3 +29,8 @@ export const selectIsUserLoggedIn = createSelector(
   selectUserBranch,
   (user) => !!user.name,
 );
+
+export const selectLoggedInUserName = createSelector(
+  selectUserBranch,
+  (b) => b.name || '',
+);
