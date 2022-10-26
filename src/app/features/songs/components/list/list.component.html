@@ -1,1 +1,23 @@
-<p>list works!</p>
+<ul
+  class="list-unstyled"
+  *ngIf="model$ | async as model"
+>
+  <li
+    class="card"
+    *ngFor="let song of model.songs"
+  >
+    <span class="card-header">{{ song.title }}</span>
+    <div class="card-body">
+      <span>The song {{ song.title }} is by the Artist {{ song.artist }}</span>
+      <div *ngIf="song.album">
+        <p>It appears on the Album {{ song.album }}</p>
+      </div>
+    </div>
+    <div
+      class="card-footer"
+      *ngIf="!song.album"
+    >
+      <button class="btn btn-primary">Add Album</button>
+    </div>
+  </li>
+</ul>
