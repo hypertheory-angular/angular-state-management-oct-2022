@@ -13,6 +13,11 @@ const routes: Routes = [
     component: DumbCounterComponent,
   },
   {
+    path: 'songs',
+    loadChildren: () =>
+      import('./features/songs/songs.module').then((m) => m.SongsModule),
+  },
+  {
     path: 'redux-counter',
     loadChildren: () =>
       import('./features/redux-counter/redux-counter.module').then(
