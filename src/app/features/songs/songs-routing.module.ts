@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { EntryComponent } from './components/entry/entry.component';
 import { ListComponent } from './components/list/list.component';
 import { OverviewComponent } from './components/overview/overview.component';
+import { LoggedInGuard } from './logged-in.guard';
 import { SongsComponent } from './songs.component';
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
       {
         path: 'entry',
         component: EntryComponent,
+        canActivate: [LoggedInGuard],
       },
       {
         path: '**',

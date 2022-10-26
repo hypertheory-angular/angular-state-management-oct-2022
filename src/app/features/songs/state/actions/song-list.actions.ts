@@ -1,9 +1,13 @@
 import { createActionGroup, props, emptyProps } from '@ngrx/store';
 import { SongEntity } from '../reducers/song-list.reducer';
 
+// export type SongCreate = Pick<SongEntity, 'title' | 'artist' | 'album'>;
+export type SongCreate = Omit<SongEntity, 'id'>;
 export const SongListEvents = createActionGroup({
   source: 'Songs SongList Events',
-  events: {},
+  events: {
+    created: props<{ payload: SongCreate }>(),
+  },
 });
 
 export const SongListCommands = createActionGroup({
