@@ -1,0 +1,18 @@
+services:
+  sql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=TokyoJoe138!
+    ports:
+      - 1433:1433
+  api:
+    image: jeffrygonzalez/songs-api:v0.2
+    ports:
+      - 1337:80
+    depends_on:
+      - sql
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - ConnectionStrings__songs=Server=sql;Database=songs;User Id=sa;Password=TokyoJoe138!
