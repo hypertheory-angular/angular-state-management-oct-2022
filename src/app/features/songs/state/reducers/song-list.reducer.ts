@@ -17,5 +17,6 @@ const initialState = adapter.getInitialState();
 
 export const reducer = createReducer(
   initialState,
+  on(SongListDocuments.song, (s, a) => adapter.addOne(a.payload, s)),
   on(SongListDocuments.songs, (s, a) => adapter.setAll(a.payload, s)),
 );

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
-import { map } from 'rxjs';
+import { catchError, map, of } from 'rxjs';
 
 import { SongsFeatureEvents } from '../actions/feature.actions';
 import { SongListCommands } from '../actions/song-list.actions';

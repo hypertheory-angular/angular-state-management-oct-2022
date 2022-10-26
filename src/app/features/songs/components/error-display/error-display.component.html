@@ -1,0 +1,9 @@
+<div *ngIf="model$ | async as model">
+  <app-alert
+    *ngIf="model.hasError"
+    type="danger"
+    (dismissed)="clearError()"
+    [dismissable]="true"
+    [message]="model.errorMessage || ''"
+  ></app-alert>
+</div>
